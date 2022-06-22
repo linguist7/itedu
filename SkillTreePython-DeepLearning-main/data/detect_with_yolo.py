@@ -63,7 +63,7 @@ def draw_result(img,
       car = img[y:y+h, x:x+w]
       carnums_pred = carnum_model.detectMultiScale(car)
       for (x2, y2, w2, h2) in carnums_pred:                           
-        cv2.rectangle(img, (x2, y2), (x2+w2, y2+h2), (0,0,255) , 2)
+        cv2.rectangle(car, (x2, y2), (x2+w2, y2+h2), (0,0,255) , 2)
   IPython.display.clear_output(wait=True)
   cv2_imshow(img)
     
