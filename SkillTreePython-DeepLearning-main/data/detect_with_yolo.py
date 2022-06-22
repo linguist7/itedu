@@ -58,6 +58,8 @@ def draw_result(img,
       class_name = class_names[class_id]
 
       cv2.rectangle(img, (x, y), (x+w, y+h), color , 2)
+      cv2.putText(img, 'class_name', (x, y), cv2.FONT_ITALIC, 0.5, color, 2)
+      
       car = img[y:y+h, x:x+w]
       carnums_pred = carnum_model.detectMultiScale(car)
       for (x2, y2, w2, h2) in carnums_pred:                           
