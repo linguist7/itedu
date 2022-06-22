@@ -25,6 +25,7 @@ def get_preds(img, model, predict_layer_names, min_confidence=0.5):
   boxes = []
   confidences=[]
   class_ids = []
+  preds_each_layers = model.forward(predict_layer_names)
   for preds in preds_each_layers:
     for pred in preds:
       box, confidence, class_id = pred[:4], pred[4], np.argmax(pred[5:])
@@ -66,9 +67,11 @@ def draw_result(img,
     
 
 def img2detect(img, predict_layer_names, class_names, class_colors,
-               min_confidence=.5):
+               min_confidence=.5,
+               font_size=.6):
     boxes, confidences, class_ids = get_preds(img, model, predict_layer_names, min_confidence=0.5)
-    draw_result(img, 
+    draw_result(img, model,
                 boxes, confidences, class_ids,
                 class_names, class_colors,
-                min_confidence=min_confidence)
+                min_confidence=min_confidence,
+                font_size=font_size)
