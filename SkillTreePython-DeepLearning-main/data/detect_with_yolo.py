@@ -66,11 +66,11 @@ def draw_result(img,
   cv2_imshow(img)
     
 
-def img2detect(img, predict_layer_names, class_names, class_colors,
+def img2detect(img, model, predict_layer_names, class_names, class_colors,
                min_confidence=.5,
                font_size=.6):
     boxes, confidences, class_ids = get_preds(img, model, predict_layer_names, min_confidence=0.5)
-    draw_result(img, model,
+    draw_result(img,
                 boxes, confidences, class_ids,
                 class_names, class_colors,
                 min_confidence=min_confidence,
