@@ -13,7 +13,8 @@
 5. 머신러닝기반 데이터 분석 - perceptron, adaline, linear_regression, logistic_regression, softmax_regression 등을 Scratch 부터 구현하였고 다양한 머신러닝 기법을 학습했습니다.
 
 ## `3. DeepLearning-main`
-1. openCV & yolo_V3 - openCV를 통해 이미지 데이터를 처리하는 방법을 배우고 yoloV3을 통해 이미지, 동영상에서 객체탐지, bboxing, labeling을 실습하였습니다.
-2. 딥러닝with텐서플로우-basic - DNN, CNN에 대해 학습하고 Alexnet, VGG16, ResNet을 Scratch부터 구현하였습니다.
-3. NLP - 임베딩을 직접 만들거나 Glove를 받아와서 진행하고 Varnila RNN, LSTM, GRU를 구현하고 차이를 비교하였습니다.
-4. 케라스_창시자에게_배우는_딥러닝 - 데이터로드, 증강, 콜백, 전이학습 등을 학습하였습니다.
+0. openCV & yolo_V3 - openCV를 통해 이미지 데이터를 처리하는 방법을 배우고 yoloV3을 통해 이미지, 동영상에서 객체탐지, bboxing, labeling을 실습하였습니다.
+1. 딥러닝with텐서플로우-basic - DNN, CNN에 대해 학습하고 Alexnet, VGG16, ResNet을 Scratch부터 구현하였습니다.
+2. NLP - 임베딩을 직접 만들거나 Glove를 받아와서 진행하고 Varnila RNN, LSTM, GRU를 구현하고 차이를 비교하였습니다.
+3. 케라스_창시자에게_배우는_딥러닝 - 데이터로드, 증강, 콜백, 전이학습 등을 학습하였습니다.
+4. Paper_with_code - U_Net, GAN, CGAN, StyleTransfer, WaveNet, Autoencoder, VAE, Transformer 등 다양한 모델에 대한 논문을 읽고 코드를 구현했습니다.
